@@ -2,15 +2,15 @@ import { MENUS } from "@/data/menus";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-export const Nosburger = () => {
+export const Nosbowl = () => {
   return (
     <>
       <section className="p-8">
         <h2 className="uppercase font-extrabold text-5xl ml-[5%] mt-[5%] mb-[5%]">
-          Nos Burgers.
+          Nos Healthy Bowls.
         </h2>
         <div className="flex gap-4 p-8 w-full justify-around">
-          {MENUS.filter(menu => menu.type === "burger").map((burger, index) => {
+          {MENUS.filter(menu => menu.type === "bol").map((burger, index) => {
             return (
               <div
                 className="min-w-0 shrink-0 grow-0 basis-full px-4 py-12 md:px-4 md:basis-1/2 lg:basis-1/4 shadow-lg rounded-2xl max-h-[320px] max-w-fit"
