@@ -1,12 +1,12 @@
 import { Link } from "next-view-transitions";
 import Image from "next/image";
 
-export const Herobanner = () => {
+export const HerobannerReserve = () => {
   return (
-    <section className="relative w-full h-screen flex items-center">
+    <section className="w-full h-screen flex items-center justify-center">
       {/* Image en plein écran */}
       <Image
-        src="/assets/images/home/herobanner-section.jpg"
+        src="/assets/images/reserver/reserve-bg.jpg"
         alt="Hero Banner"
         layout="fill"
         objectFit="cover" // Permet de garder l'image bien remplie sans déformation
@@ -15,23 +15,23 @@ export const Herobanner = () => {
       />
 
       {/* Contenu au-dessus de l'image */}
-      <div className="relative z-10 ml-[10%] flex flex-col gap-10 text-black">
-        <h1 className="uppercase font-black text-3xl md:text-5xl max-w-[40%]">
-          Découvrez une expérience gustative unique !
+      <div className="flex flex-col gap-10 text-black justify-center items-center text-center">
+        <h1 className="uppercase font-black text-3xl md:text-5xl">
+          Je reserve une table !
         </h1>
-        <p className="md:max-w-[40%] font-thin">
-          Chez EDEN HEALTH, on vous propose une carte saine et gourmande.
-          Régalez-vous sans compromis !
+        <p className="md:max-w-[60%] font-thin">
+          Savourez une cuisine équilibrée qui allie fraîcheur et bien-être, pour
+          une expérience culinaire à la fois délicieuse et bonne pour la santé.
         </p>
         <p className="font-thin">
-          Réservez dès maintenant dans notre restaurant.
+        Offrez à votre corps le meilleur avec nos plats sains !
         </p>
         <ul>
           <Link
-            href="/reserver-une-table"
+            href="/le-menu"
             className="uppercase bg-primary text-white p-3 rounded-md font-bold text-lg shadow-xl"
           >
-            RÉSERVER UNE TABLE
+            voir le menu
           </Link>
         </ul>
       </div>

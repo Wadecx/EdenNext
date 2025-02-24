@@ -6,20 +6,20 @@ export const Edengourmand = () => {
     <section className=" z-[999]">
 
       {/* Partie gauche  */}
-      <div className="flex items-center">
-        <div className="w-1/2 items-start flex flex-col ml-[7%] gap-10">
-          <h2 className="text-3xl font-bold w-[70%] uppercase">
+      <div className="flex md:items-center flex-col md:flex-row gap-7 my-8">
+        <div className="md:w-1/2 items-start flex flex-col md:ml-[7%] ml-[3%] gap-10">
+          <h2 className="text-3xl font-bold md:w-[70%] uppercase">
             EDEN HEALTH, UN PLAISIR GOURMAND ET
             <span className="text-secondary"> sans compromis</span>.
           </h2>
-          <p className="w-[70%]">
-            OEDEN HEALTH prouve qu’on peut se faire plaisir tout en prenant soin
+          <p className="md:w-[70%]">
+            EDEN HEALTH prouve qu’on peut se faire plaisir tout en prenant soin
             de sa santé. Avec des produits savoureux et naturels, sans additifs,
             chaque bouchée est un régal. Que ce soit pour un encas ou un
             dessert, ce restaurant offre des options pour tous les goûts et
             régimes.
           </p>
-          <p className="w-[70%]">
+          <p className="md:w-[70%]">
             Les recettes sont pensées pour offrir un équilibre parfait entre
             saveur et bien-être, permettant à chacun de se faire plaisir sans
             culpabilité.

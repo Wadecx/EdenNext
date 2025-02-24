@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Greenbaner = () => {
   return (
-    <section className="flex p-8 bg-primary min-h-80 justify-evenly items-center uppercase">
+    <section className="flex p-8 bg-primary min-h-80 justify-evenly items-center uppercase flex-col md:flex-row gap-10 my-8">
       <div className="text-white flex flex-col items-center gap-2 font-bold text-2xl text-center">
         <Image
           className=""

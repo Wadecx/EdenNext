@@ -5,6 +5,7 @@ import { Nosburger } from '@/containers/home/nos-burger';
 import { Greenbaner } from '@/containers/home/greenbanner';
 import { Nosbowl } from '@/containers/home/nos-bowl';
 import { Edengourmand } from '@/containers/home/eden-gourmand';
+import { Customersreview } from '@/containers/home/customers-reviews';
 
 export const metadata: Metadata = {
   title: '',
@@ -19,5 +20,6 @@ export default function HomePage() {
   <Greenbaner/>
   <Nosbowl/>
   <Edengourmand/>
+  <Customersreview/>
   </>;
 }

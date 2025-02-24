@@ -1,3 +1,5 @@
+import { HerobannerReserve } from '@/containers/reserve-table/Herobanner-reserve';
+import { Reservation } from '@/containers/reserve-table/reservation-tally';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -6,5 +8,8 @@ export const metadata: Metadata = {
 };
 
 export default function RevervePage() {
-  return <></>;
+  return <>
+  <HerobannerReserve/>
+  <Reservation/>
+  </>;
 }
