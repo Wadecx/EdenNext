@@ -21,7 +21,7 @@ export const Edenhealthbonheur = () =>{
                     <p className="md:w-[70%] w-[80%]">Notre objectif, prendre soin de vous. Dans notre jardin, vous mangerez des produits frais et sains, parfaitement ‘healthy’ !
                     EDEN HEALTH, une entreprise engageante, une entreprise éco-responsable.</p>
 
-            <Link href="/reserver-une-table" className="flex items-center uppercase justify-center font-black bg-secondary text-white h-10 rounded-md px-6 py-4 w-fit text-xl"> EN SAVOIR PLUS</Link>
+            <Link href="/reserver-une-table" className="flex items-center uppercase justify-center font-black bg-secondary text-white h-10 rounded-md px-6 py-4 w-fit text-xl hover:shadow-xl transition duration-300"> EN SAVOIR PLUS</Link>
 
                 </div>
             </div>

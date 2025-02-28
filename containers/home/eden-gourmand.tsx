@@ -27,7 +27,7 @@ export const Edengourmand = () => {
 
           <Link
             href="/reserver-une-table"
-            className="flex items-center uppercase justify-center font-black bg-primary text-white h-10 rounded-md px-6 py-4 w-fit"
+            className="flex items-center uppercase justify-center font-black bg-primary text-white h-10 rounded-md px-6 py-4 w-fit hover:shadow-xl transition duration-300"
           >
             voir le menu
           </Link>
