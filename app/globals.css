@@ -21,3 +21,8 @@ small,
 a {
   /* insert text font */
 }
+
+html {
+  scroll-behavior: smooth;
+}
+

@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion"; // Import de Framer Mot
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isBouncing, setIsBouncing] = useState(false);
 
   return (
     <header className="flex items-center justify-between py-5 px-8 fixed top-0 left-0 right-0 z-[999] bg-white shadow-lg">
@@ -21,14 +22,17 @@ const Header = () => {
       </Link>
 
       <nav className="hidden md:flex gap-12 items-center text-xl">
-        <Link href="/le-menu">MENU</Link>
-        <Link href="/le-concept">LE CONCEPT</Link>
-        <Link
-          href="/reserver-une-table"
-          className="uppercase bg-primary text-white p-3 rounded-md font-bold text-lg"
-        >
-          RÉSERVER UNE TABLE
-        </Link>
+        <Link href="/le-menu" className="hover:text-secondary transition duration-300">MENU</Link>
+        <Link href="/le-concept" className="hover:text-secondary transition duration-300">LE CONCEPT</Link>
+        <Link href="/reserver-une-table">
+      <motion.div
+        className="uppercase bg-primary text-white p-3 rounded-md font-bold text-lg hover:shadow-xl"
+        whileTap={{ scale: 0.95 }} // Rétrécit au clic
+        transition={{ duration: 0.3 }} // Animation rapide
+      >
+        RÉSERVER UNE TABLE
+      </motion.div>
+    </Link>
       </nav>
 
       <button

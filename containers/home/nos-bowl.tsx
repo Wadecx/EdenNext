@@ -5,7 +5,7 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export const Nosbowl = () => {
-  const bol = MENUS.filter((menu) => menu.type === "bol");
+  const bol = MENUS.filter((menu) => menu.type === "bol").slice(0, 4);
 
   // Si aucune donnée de burger n'est trouvée
   if (bol.length === 0) {
@@ -69,10 +69,10 @@ export const Nosbowl = () => {
               alt="Image montrant un Burger"
               className="-mt-2 w-[300px] max-h-[200px] mx-auto object-contain relative bottom-[30%]"
             />
-            <div className="space-y-4 p-4 flex relative flex-col bottom-20">
-              <h2 className="font-bold text-xl">{bol.name}</h2>
+            <div className="space-y-4 p-4 flex relative flex-col bottom-20 uppercase">
+              <h2 className="font-extrabold text-xl ">{bol.name}</h2>
               <p>{bol.quantity}</p>
-              <p className="font-bold">{bol.price} €</p>
+              <p className="font-extrabold">{bol.price} €</p>
             </div>
           </div>
         ))}

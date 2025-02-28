@@ -5,16 +5,14 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export const Nosburger = () => {
-  const burgers = MENUS.filter((menu) => menu.type === "burger");
+  const burgers = MENUS.filter((menu) => menu.type === "burger").slice(0, 4); // On limite à 4 burgers
 
-  // Si aucune donnée de burger n'est trouvée
   if (burgers.length === 0) {
     return (
       <p className="text-center text-xl font-bold">Aucun burger disponible.</p>
     );
   }
 
-  // Gérer l'index de l'image actuellement affichée
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -55,6 +53,7 @@ export const Nosburger = () => {
         </div>
       </div>
 
+      {/* Affichage Desktop (max 4 burgers) */}
       <div className="hidden md:flex gap-4 p-8 w-full justify-around">
         {burgers.map((burger, index) => (
           <div
@@ -68,16 +67,16 @@ export const Nosburger = () => {
               alt="Image montrant un Burger"
               className="-mt-2 w-[300px] max-h-[200px] mx-auto object-contain relative bottom-[30%]"
             />
-            <div className="space-y-4 p-4 flex relative flex-col bottom-20">
-              <h2 className="font-bold text-xl">{burger.name}</h2>
+            <div className="space-y-4 p-4 flex relative flex-col bottom-20 uppercase">
+              <h2 className="font-extrabold text-xl">{burger.name}</h2>
               <p>{burger.quantity}</p>
-              <p className="font-bold">{burger.price} €</p>
+              <p className="font-extrabold">{burger.price} €</p>
             </div>
           </div>
         ))}
       </div>
 
-
+      {/* Navigation pour le carrousel mobile */}
       <div className="flex justify-center mt-8 gap-8 md:hidden">
         <button
           onClick={prevSlide}

@@ -29,7 +29,7 @@ export const HerobannerReserve = () => {
         <ul>
           <Link
             href="/le-menu"
-            className="uppercase bg-primary text-white p-3 rounded-md font-bold text-lg shadow-xl"
+            className="uppercase bg-primary text-white p-3 rounded-md font-bold text-lg hover:shadow-xl transition duration-300"
           >
             voir le menu
           </Link>

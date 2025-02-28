@@ -45,9 +45,22 @@ const config: Config = {
             transform: 'scale(0.90)',
           },
         },
+        // Animation pop-in
+        popIn: {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(20px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        },
       },
       animation: {
         heart: 'heart 1s ease-in-out infinite',
+        // Ajout de l'animation pop-in
+        popIn: 'popIn 1s ease-out forwards',
       },
       maxWidth: {
         '9/10': '90%',
@@ -57,4 +70,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;

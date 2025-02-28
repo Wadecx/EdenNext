@@ -1,5 +1,6 @@
 import { Link } from "next-view-transitions";
 import Image from "next/image";
+import { AnimateContainer } from "@/animations";
 
 export const Herobanner = () => {
   return (
@@ -15,26 +16,28 @@ export const Herobanner = () => {
       />
 
       {/* Contenu au-dessus de l'image */}
-      <div className="relative z-10 ml-[10%] flex flex-col gap-10 text-black">
-        <h1 className="uppercase font-black text-3xl md:text-5xl max-w-[40%]">
-          Découvrez une expérience gustative unique !
-        </h1>
-        <p className="md:max-w-[40%] font-thin">
-          Chez EDEN HEALTH, on vous propose une carte saine et gourmande.
-          Régalez-vous sans compromis !
-        </p>
-        <p className="font-thin">
-          Réservez dès maintenant dans notre restaurant.
-        </p>
-        <ul>
-          <Link
-            href="/reserver-une-table"
-            className="uppercase bg-primary text-white p-3 rounded-md font-bold text-lg shadow-xl"
-          >
-            RÉSERVER UNE TABLE
-          </Link>
-        </ul>
-      </div>
+      <AnimateContainer animate="fadeIn">
+        <div className="relative z-10 ml-[10%] flex flex-col gap-10 text-black">
+          <h1 className="uppercase font-black text-3xl md:text-5xl max-w-[45%]">
+            Découvrez une expérience gustative unique !
+          </h1>
+          <p className="md:max-w-[40%] font-thin">
+            Chez EDEN HEALTH, on vous propose une carte saine et gourmande.
+            Régalez-vous sans compromis !
+          </p>
+          <p className="font-thin">
+            Réservez dès maintenant dans notre restaurant.
+          </p>
+          <ul>
+            <Link
+              href="/reserver-une-table"
+              className="uppercase bg-primary text-white p-3 rounded-md font-bold text-lg hover:shadow-xl transition duration-300"
+            >
+              RÉSERVER UNE TABLE
+            </Link>
+          </ul>
+        </div>
+      </AnimateContainer>
     </section>
   );
 };
