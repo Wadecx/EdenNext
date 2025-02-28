@@ -340,7 +340,7 @@ scrollbar-thin scrollbar-thumb-primary scrollbar-track-gray-200">
           ></Image>
           <div className="flex gap-3 items-center text-xl flex-col md:flex-row text-center">
             <h2 className="uppercase text-2xl font-black">cool drink</h2>
-            <p className="text-secondary">- 7 Produits</p>
+            <p className="text-secondary">- {boisson.length} Produits</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-x-6 gap-y-16 mt-16 md:mr-12">
             {boisson.map((boisson, index) => (
