@@ -18,7 +18,7 @@ export const Filtres = () => {
   const cocktail = MENUS.filter((menu) => menu.type === "cocktail");
 
   return (
-    <section className="flex flex-col md:flex-row overflow-x-hidden">
+    <section className="flex flex-col md:flex-row den">
 
       <div className="flex flex-col p-8 shadow-2xl md:w-1/5 mt-24 rounded-3xl ml-8 mr-8 max-h-[700px] overflow-y-auto md:sticky md:top-[150px]
 scrollbar-thin scrollbar-thumb-primary scrollbar-track-gray-200">
