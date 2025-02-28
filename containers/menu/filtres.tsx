@@ -374,7 +374,7 @@ scrollbar-thin scrollbar-thumb-primary scrollbar-track-gray-200">
             className="md:w-[90%] md:h-[230px] w-full h-[90px]"
           ></Image>
           <div className="flex gap-3 items-center text-xl flex-col md:flex-row text-center">
-            <h2 className="uppercase text-2xl font-black">cool drink</h2>
+            <h2 className="uppercase text-2xl font-black">DÉTOX & MOCKTAILS</h2>
             <p className="text-secondary">- {} Produits</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-x-6 gap-y-16 mt-16 md:mr-12">
